@@ -87,9 +87,6 @@ body{
 .nav__link--cta{
     color: var(--Dark-blue);
     background-color: var(--Yellow);
-    /* padding: 1em 1.5em;
-    border-radius: 2em;
-    font-family: var(--font1); */
 }
 
 .hero__main{
