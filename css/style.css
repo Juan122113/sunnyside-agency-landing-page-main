@@ -221,7 +221,7 @@ body{
 
 .jobs{
     display: grid;
-    grid-auto-rows: 550px;
+    grid-auto-rows: 37.5rem;
     position: relative;
     top: 10.5rem;
 }
@@ -235,11 +235,12 @@ body{
     /* background-size: 25rem; */
     background-repeat: no-repeat;
     background-image: url(../images/mobile/image-graphic-design.jpg);
-    padding: 2.5rem 1.5rem 2.5rem;
+    padding: 2.5rem .95rem 2.5rem;
     text-align: center;
     color: var(--Dark-desaturated-cyan);
     position: relative;
     top: 2rem;
+    /* height: 50rem; */
 }
 
 .jobs__section--second{
@@ -251,11 +252,17 @@ body{
     font-family: var(--font1);
     font-size: 1.75rem;
     font-weight: 800;
+    margin-top: -2.4rem;
+    /* margin-bottom: .05rem; */
+    /* position: relative; */
+    /* top: 3.22rem; */
 }
 
 .jobs__paragraph{
-    line-height: 1.5;
-    margin-top: 1rem;
+    line-height: 1.73;
+    margin-top: 1.5rem;
+    font-size: .99rem;
+    margin-bottom: 1.16rem;
 }
 
 .testimonials{
