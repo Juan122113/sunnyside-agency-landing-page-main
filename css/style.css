@@ -21,11 +21,19 @@
 
 html {
     height: 100%;
+    /* width: 100%; */
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body{
     font-family: var(--font2);
     min-height: 100vh;
+    /* width: 100%; */
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .container{
@@ -39,6 +47,7 @@ body{
     background-image: url(../images/mobile/image-header.jpg);
     background-size: cover;
     background-position: center;
+    /* max-width:100%; height:auto; display:block; */
 }
 
 .nav{
@@ -79,6 +88,7 @@ body{
     opacity: 0;
     pointer-events: none;
     transition: .3s opacity;
+    z-index: 100;
 }
 
 .nav__links:target{
@@ -123,6 +133,8 @@ body{
     /* margin-top: -2rem; */
     position: relative;
     bottom: 1.5rem;
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
 }
 
 /* .hero__arrow { */
@@ -140,6 +152,7 @@ body{
     background-size: cover;
     background-position: center;
     height: 125%;
+    /* max-width:100%; height:auto; display:block; */
 }
 
 .services__texts{
@@ -155,6 +168,8 @@ body{
     font-family: var(--font1);
     color: var(--Very-dark-desaturated-blue);
     font-weight: 800;
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
 }
 
 .services__paragraph{
@@ -163,6 +178,8 @@ body{
     margin: 1.4rem 0 1.5rem;
     /* width: 10%; */
     font-size: 1.1rem;
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
 }
 
 .services__cta{
@@ -197,14 +214,17 @@ body{
     background-image: url(../images/mobile/image-stand-out.jpg);
     /* padding-top: 20rem; */
     margin-top: 6.3rem;
+    /* max-width:100%; height:auto; display:block; */
 }
 
 .services__texts--2{
     --color: hsl(7, 99%, 70%, 0.267);
-    margin-top: 8.8rem;
+    margin-top: 8.9rem;
     padding-top: 13.9rem;
     /* padding-bottom: 10rem; */
     /* margin-bottom: 10rem; */
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
 }
 
 .services__title--2 {
@@ -213,14 +233,19 @@ body{
 
 .services__paragraph--2 {
     margin: 1.5rem .45rem 1.5rem;
+    /* font-size: ; */
 }
 
 .services__cta--2 {
     /* margin-bottom: 4rem; */
+    /* margin-top: 10.2rem; */
+    position: relative;
+    /* top: 10.3rem; */
 }
 
 .jobs{
     display: grid;
+    /* grid-auto-rows: 550px; */
     grid-auto-rows: 37.5rem;
     position: relative;
     top: 10.5rem;
@@ -229,82 +254,121 @@ body{
 .jobs__section{
     display: grid;
     align-content: end;
-    /* background-position: center; */
+    background-position: center;
     background-size: cover;
     /* background-size: contain; */
     /* background-size: 25rem; */
     background-repeat: no-repeat;
     background-image: url(../images/mobile/image-graphic-design.jpg);
-    padding: 2.5rem .95rem 2.5rem;
+    padding: 2.5rem 1.5rem;
+    /* padding: 2.5rem .95rem 2.5rem; */
     text-align: center;
     color: var(--Dark-desaturated-cyan);
     position: relative;
     top: 2rem;
     /* height: 50rem; */
+    /* max-width:100%; height:auto; display:block; */
 }
 
 .jobs__section--second{
     color: var(--Dark-blue);
     background-image: url(../images/mobile/image-photography.jpg);
+    padding: 2.5rem 1rem;
+    /* max-width:100%; height:auto; display:block; */
 }
 
 .jobs__name{
     font-family: var(--font1);
     font-size: 1.75rem;
     font-weight: 800;
-    margin-top: -2.4rem;
+    margin-top: -2.5rem;
     /* margin-bottom: .05rem; */
     /* position: relative; */
     /* top: 3.22rem; */
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
 }
 
 .jobs__paragraph{
-    line-height: 1.73;
-    margin-top: 1.5rem;
+    line-height: 1.75;
+    margin-top: 1.3rem;
     font-size: .99rem;
     margin-bottom: 1.16rem;
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
 }
+
+.jobs__name--2 {
+    margin-top: -2.54rem;
+    /* font-size: 1.75rem; */
+    position: relative;
+    right: .385rem;
+    letter-spacing: .009rem;
+}
+
+/* .jobs__paragraph--2 {
+    
+} */
 
 .testimonials{
     text-align: center;
+    height: 86.7rem;
+    align-content: end;
 }
 
 .testimonials__title{
-    font-size: 1rem;
-    letter-spacing: 2px;
+    font-size: .95rem;
+    letter-spacing: 4.7px;
     text-transform: uppercase;
     color: var(--Dark-grayish-blue);
     font-family: var(--font1);
-    margin-top: 70px;
+    /* margin-top: 20px; */
+    margin-top: 16.5rem;
+    /* margin-top: -5rem; */
+    /* position: relative; */
+    /* bottom: 3.2rem; */
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
 }
 
 .testimonials__container{
-    padding: 60px 20px;
+    padding: 85px 20px;
     display: grid;
     gap: 6rem;
+    position: relative;
+    bottom: 1.3rem;
+    right: .03rem;
 }
 
 .testimonials__img{
-    width: 70px;
-    height: 70px;
+    width: 72px;
+    height: 72px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .testimonials__paragraph{
     color: var(--Dark-blue);
-    line-height: 1.5;
-    margin: 1.5rem 0;
+    line-height: 1.8;
+    margin: 1.8rem 1.045rem;
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
+    font-size: 1.12rem;
 }
 
 .testimonials__name{
     color: var(--Very-dark-desaturated-blueDark-blue);
     font-family: var(--font1);
     margin-bottom: .7rem;
+    /* margin-top: 1.5rem; */
+    padding-top: .15rem;
+    font-weight: 800;
+    letter-spacing: -.03rem;
 }
 
 .testimonials__job{
     color: var(--Grayish-blue);
+    /* font-size: ; */
 }
 
 .gallery{
@@ -318,6 +382,7 @@ body{
     background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
     background-size: cover;
     background-position: center;
+    /* max-width:100%; height:auto; display:block; */
 }
 
 .gallery__image:nth-of-type(2){
@@ -369,6 +434,8 @@ body{
     font-size: x-small;
     background-color: #90d4c5;
 }
+
+/* img, picture, svg, video { max-width:100%; height:auto; display:block; } */
 
 @media (min-width: 768px){
     
