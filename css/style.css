@@ -37,6 +37,10 @@ body{
     /* position: relative; */
 }
 
+/* body:target .nav__links {
+    opacity: 0;
+} */
+
 .container{
     padding: 80px 0;
     width: 90%;
@@ -75,16 +79,20 @@ body{
 
 .nav__links{
     position: fixed;
-    top: 80px;
+    /* position: relative; */
+    /* position: absolute; */
+    /* top: 80px; */
+    top: 6.7rem;
     left: 0;
     right: 0;
-    width: 90%;
+    width: 87.5%;
     margin: 0 auto;
-    padding: 2em 1em;
+    padding: 2.5em 1em;
     background-color: #fff;
 
     display: grid;
     gap: 1em;
+    gap: 2.1em;
 
     opacity: 0;
     pointer-events: none;
@@ -112,11 +120,18 @@ body{
     justify-self: center;
     text-decoration: none;
     color: var(--Dark-grayish-blue);
+    font-size: 1.2rem;
 }
 
 .nav__link--cta{
     color: var(--Dark-blue);
     background-color: var(--Yellow);
+    padding: 1rem 2.3rem;
+    border-radius: 30px;
+    text-align: center;
+    /* margin-top: .01rem; */
+    margin-top: -.1rem;
+    /* margin-bottom: .1rem; */
 }
 
 .hero__main{
