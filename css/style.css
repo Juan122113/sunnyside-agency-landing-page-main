@@ -87,12 +87,14 @@ body{
     right: 0;
     width: 87.5%;
     margin: 0 auto;
-    padding: 2.5em 1em;
+    /* padding: 2.5em 1em; */
+    padding: 11vw 1em;
     background-color: #fff;
 
     display: grid;
-    gap: 1em;
+    /* gap: 1em; */
     gap: 2.1em;
+    gap: 8.77vw;
 
     opacity: 0;
     pointer-events: none;
@@ -149,8 +151,11 @@ body{
     /* margin-top: -2rem; */
     position: relative;
     bottom: 1.5rem;
-    /* max-width: calc(100% - 2rem);
-    overflow-wrap: break-word; */
+    /* max-width: calc(100% - 1rem); */
+    overflow-wrap: break-word;
+    /* text-align: center; */
+    margin: 0 auto 1.55rem auto;
+    /* padding-right: .3rem; */
 }
 
 /* .hero__arrow { */
@@ -495,7 +500,9 @@ body{
 }
 
 .attribution{
-    font-size: .85rem;
+    /* font-size: .85rem; */
+    /* font-size: 85%; */
+    font-size: 3.6vw;
     background-color: #90d4c5;
 }
 
