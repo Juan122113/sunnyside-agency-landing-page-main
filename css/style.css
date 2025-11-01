@@ -485,6 +485,7 @@ body{
     color: var(--dark-moderate-cyan);
     text-decoration: none;
     padding: 1.5rem 0 3rem;
+    font-size: 1.1rem;
 }
 
 .footer__social{
@@ -502,7 +503,8 @@ body{
 .attribution{
     /* font-size: .85rem; */
     /* font-size: 85%; */
-    font-size: 3.6vw;
+    /* font-size: 3.6vw; */
+    font-size: clamp(.7rem, 3.6vw, 1rem);
     background-color: #90d4c5;
 }
 
