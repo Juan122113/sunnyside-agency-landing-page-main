@@ -90,12 +90,10 @@ body{
     /* padding: 2.5em 1em; */
     padding: 11vw 1em;
     background-color: #fff;
-
     display: grid;
     /* gap: 1em; */
-    gap: 2.1em;
-    gap: 8.77vw;
-
+    /* gap: 2.1em; */
+    gap: 9.2vw;
     opacity: 0;
     pointer-events: none;
     transition: .3s opacity;
@@ -147,15 +145,16 @@ body{
     font-family: var(--font1);
     text-transform: uppercase;
     letter-spacing: 8px;
-    margin-bottom: 1.55rem;
+    margin-bottom: 1.15rem;
     /* margin-top: -2rem; */
     position: relative;
-    bottom: 1.5rem;
+    bottom: 1.4rem;
     /* max-width: calc(100% - 1rem); */
     overflow-wrap: break-word;
     /* text-align: center; */
     margin: 0 auto 1.55rem auto;
     /* padding-right: .3rem; */
+    line-height: 1.22;
 }
 
 /* .hero__arrow { */
@@ -199,12 +198,13 @@ body{
     font-weight: 800;
     /* max-width: calc(100% - 2rem);
     overflow-wrap: break-word; */
+    line-height: 1.2;
 }
 
 .services__paragraph{
     line-height: 1.7;
     color: var(--Very-dark-grayish-blue);
-    margin: 1.4rem 0 1.5rem;
+    margin: 1.52rem 0 1.5rem;
     /* width: 10%; */
     font-size: 1.1rem;
     /* max-width: calc(100% - 2rem);
@@ -335,7 +335,7 @@ body{
 }
 
 .jobs__name--2 {
-    margin-top: -2.54rem;
+    margin-top: -2.44rem;
     /* font-size: 1.75rem; */
     position: relative;
     right: .385rem;
@@ -348,7 +348,7 @@ body{
 
 .testimonials{
     text-align: center;
-    height: 91.1rem;
+    /* height: 91.1rem; */
     align-content: end;
     /* overflow-y: visible;
     overflow-y: auto;
@@ -358,12 +358,12 @@ body{
 
 .testimonials__title{
     font-size: .95rem;
-    letter-spacing: 4.7px;
+    letter-spacing: 4.8px;
     text-transform: uppercase;
     color: var(--Dark-grayish-blue);
     font-family: var(--font1);
     /* margin-top: 20px; */
-    margin-top: 16.5rem;
+    margin-top: 16.6rem;
     /* margin-top: -5rem; */
     /* position: relative; */
     /* bottom: 3.2rem; */
@@ -399,9 +399,9 @@ body{
 .testimonials__name{
     color: var(--Very-dark-desaturated-blueDark-blue);
     font-family: var(--font1);
-    margin-bottom: .7rem;
+    margin-bottom: .8rem;
     /* margin-top: 1.5rem; */
-    padding-top: .15rem;
+    padding-top: .25rem;
     font-weight: 800;
     letter-spacing: -.03rem;
 }
