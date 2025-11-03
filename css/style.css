@@ -640,7 +640,7 @@ body{
     }
     
     .services{
-        grid-template-rows: repeat(2,500px);
+        grid-template-rows: repeat(2,498px);
         grid-template-columns: repeat(2,1fr);
         grid-template-areas:
         "text1 img1"
@@ -650,18 +650,66 @@ body{
     .services__image{
         background-image: url(../images/desktop/image-transform.jpg);
         grid-area: img1;
+        background-size: contain;
+        background-size: cover;
+        height: auto;
+        height: 120.1%;
     }
     
     .services__texts{
-    
         text-align: start;
         grid-area: text1;
-        padding: 2rem 3rem;
-        
+        padding: 0 7rem 2rem 10.5rem;
+        margin-top: 6.2rem;
+        line-height: .3rem;
+    }
+
+    .services__title{
+        font-size: 2.58rem;
+    /* font-family: var(--font1); */
+    /* color: var(--Very-dark-desaturated-blue); */
+    /* font-weight: 800; */
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
+        /* line-height: 1.2; */
+        /* margin-right: 1rem; */
+        margin-left: -.2rem;
+    }
+
+    .services__paragraph{
+    /* line-height: 1.7; */
+    /* color: var(--Very-dark-grayish-blue); */
+        margin: 2rem 0 2rem;
+    /* width: 10%; */
+        font-size: 1.1rem;
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
+    /* padding-top: .5rem; */
+    }
+
+    .services__cta{
+    /* color: var(--Very-dark-desaturated-blue); */
+    /* text-decoration: none; */
+    /* text-transform: uppercase; */
+    /* font-family: var(--font1); */
+    /* font-size: 1rem; */
+    /* font-weight: 800; */
+    /* word-spacing: .2rem; */
+    /* letter-spacing: 1rem; */
+
+    /* position: relative; */
+    /* margin-top: 4rem; */
+    /* padding-top: 4rem; */
+        top: 1.15rem;
+        right: 0;
+        left: .3rem;
     }
     
     .services__texts--2{
         grid-area: text2;
+        margin-top: 5.2rem;
+        padding-top: 13.9rem;
+        padding-left: 7rem;
     }
     
     .service__image--2{
@@ -671,7 +719,7 @@ body{
 
     .jobs{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 500px;
+        grid-template-rows: 600px;
     }
     
     .jobs__section{
@@ -682,18 +730,81 @@ body{
         background-image: url(../images/desktop/image-photography.jpg);
     }
 
+    .jobs__name{
+        /* font-family: var(--font1); */
+        /* font-size: 1.75rem; */
+        /* font-weight: 800; */
+        margin-top: -3.2rem;
+    /* margin-bottom: .05rem; */
+    /* position: relative; */
+    /* top: 3.22rem; */
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
+    }
+
+    .jobs__paragraph{
+    /* line-height: 1.75; */
+    margin-top: .5rem;
+    /* font-size: .99rem; */
+    margin-bottom: 1.16rem;
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
+    padding: 0 10.5rem;
+    }
+
+    .jobs__name--2 {
+    margin-top: -3.2rem;
+    /* font-size: 1.75rem; */
+    /* position: relative; */
+    right: 0rem;
+    /* letter-spacing: .009rem; */
+    }
+
     .testimonials{
-        text-align: center;
-    
+    text-align: center;
+    /* height: 91.1rem; */
+    align-content: end;
+    /* overflow-y: visible;
+    overflow-y: auto;
+    overflow-y: clip; */
+    height: 100%;
+    margin-top: 6rem;
+    }
+
+    .testimonials__title{
+    font-size: 1.3rem;
+    /* letter-spacing: 4.8px; */
+    /* text-transform: uppercase; */
+    /* color: var(--Dark-grayish-blue); */
+    /* font-family: var(--font1); */
+    /* margin-top: 20px; */
+    /* margin-top: 16.6rem; */
+    /* margin-top: -5rem; */
+    /* position: relative; */
+    /* bottom: 3.2rem; */
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
     }
     
     .testimonials__container{
         grid-template-columns: repeat(3, 1fr);
-        gap: 6rem;
+        gap: 0rem;
+        padding: 7rem 7rem 0;
+        /* align-items: center; */
+        /* position: unset; */
+        /* row-gap: ; */
+        justify-items: center;
+    }
+
+    .testimonials__item {
+        /* position: relative; */
+        left: 2rem;
+        bottom: 1rem;
+        position: unset;
     }
     
     .testimonials__paragraph{
-        margin: 2.5rem 0;
+        margin: 2.5rem 1.5rem;
     }
     
     .gallery{
