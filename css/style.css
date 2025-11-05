@@ -231,6 +231,7 @@ body{
     /* padding-top: 4rem; */
     top: .6rem;
     right: .1rem;
+    cursor: pointer;
 }
 
 .services__cta::before{
@@ -251,6 +252,11 @@ body{
     left: -.3rem;
 }
 
+.services__cta:hover::before {
+    /* color: hsl(51, 100%, 49%); */
+    background-color: hsla(51, 100%, 49%, 0.719);
+}
+
 .service__image--2{
     background-image: url(../images/mobile/image-stand-out.jpg);
     /* padding-top: 20rem; */
@@ -259,7 +265,7 @@ body{
 }
 
 .services__texts--2{
-    --color: hsl(7, 99%, 70%, 0.267);
+    --color: hsla(7, 99%, 70%, 0.31);
     margin-top: 8.9rem;
     padding-top: 13.9rem;
     /* padding-bottom: 10rem; */
@@ -282,6 +288,28 @@ body{
     /* margin-top: 10.2rem; */
     position: relative;
     /* top: 10.3rem; */
+}
+
+.services__cta--2::before{
+    content: "";
+    position: absolute;
+    /* bottom: 0; */
+    /* bottom: -50; */
+    width: 110%;
+    height: 50%;
+    border-radius: 2em;
+    z-index: -1;
+    background-color: hsla(7, 99%, 70%, 0.401);
+    /* top: 100; */
+    top: .8rem;
+    right: 0;
+    /* right: .000rem; */
+    left: 0;
+    left: -.3rem;
+}
+
+.services__cta--2:hover::before {
+    background-color: hsla(7, 99%, 70%, 0.873);
 }
 
 .jobs{
@@ -500,6 +528,10 @@ body{
     font-size: 1.15rem;
 }
 
+.footer__link:hover {
+    color: #fff;
+}
+
 .footer__social{
     display: grid;
     grid-auto-flow: column;
@@ -510,6 +542,12 @@ body{
     position: relative;
     /* bottom: 3rem; */
     top: 2.7rem;
+}
+
+.footer__icon:hover {
+    fill: #fff;
+    /* background-color: #fff; */
+    /* color: #fff; */
 }
 
 .attribution{
