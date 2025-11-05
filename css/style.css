@@ -601,8 +601,9 @@ body{
         /* position: relative; */
         /* top: 0; */
         /* left: 5rem; */
-        margin-right: -9.8rem;
-        margin-right: 0rem;
+        /* margin-right: -9.8rem; */
+        /* margin-right: 0rem; */
+        margin-right: 5rem;
         margin-top: .35rem;
     }
 
@@ -651,7 +652,7 @@ body{
         font-family: var(--font1);
     /* text-transform: uppercase; */
         letter-spacing: .74rem;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     /* margin-top: -2rem; */
     /* position: relative; */
         bottom: 0;
@@ -660,13 +661,13 @@ body{
     /* text-align: center; */
         margin: 0 auto 1.55rem auto;
     /* padding-right: .3rem; */
-        line-height: .01rem;
+        /* line-height: .01rem; */
         font-weight: 800;
-        top: 1.8rem;
+        /* top: 1.8rem; */
     }
 
     .hero__arrow {
-        margin-top: 8.3rem;
+        margin-top: 4.3rem;
     }
     
     .services{
@@ -676,6 +677,7 @@ body{
         "text1 img1"
         "img2 text2";
         max-width: 100%;
+        /* box-sizing: content-box; */
     }
     
     .services__image{
@@ -683,19 +685,21 @@ body{
         grid-area: img1;
         background-size: contain;
         background-size: cover;
-        height: auto;
+        /* height: auto; */
         height: 120.1%;
     }
     
     .services__texts{
         text-align: start;
         grid-area: text1;
-        padding: 0 7rem 2rem 10.5rem;
+        /* padding: 0 7rem 2rem 10.5rem; */
         padding: 0 7rem 2rem 0rem;
+        padding: 0 7vw 2rem 0rem;
         margin-top: 6.2rem;
         line-height: .3rem;
-        margin-left: 10.5rem;
+        /* margin-left: 10.5rem; */
         margin-left: 12vw;
+        /* box-sizing: content-box; */
     }
 
     .services__title{
@@ -745,7 +749,8 @@ body{
         margin-top: 5.2rem;
         padding-top: 13.9rem;
         padding-left: 7rem;
-        /* padding-left: 0rem; */
+        padding-left: 0rem;
+        margin-left: 7rem;
     }
     
     .service__image--2{
@@ -785,16 +790,19 @@ body{
         margin-bottom: 1.16rem;
     /* max-width: calc(100% - 2rem);
     overflow-wrap: break-word; */
-        padding: 0 10.5rem;
-        padding: 0 0;
+        /* padding: 0 10.5rem; */
+        /* padding: 0 0; */
+        padding: 0 12vw;
+        /* padding: 0 0rem; */
+        /* padding: max(0px, (100vw - 600px) / 10); */
         font-weight: 500;
     }
 
     .jobs__name--2 {
-    margin-top: -3.2rem;
+        /* margin-top: -3.2rem; */
     /* font-size: 1.75rem; */
     /* position: relative; */
-    right: 0rem;
+        right: 0rem;
     /* letter-spacing: .009rem; */
     }
 
@@ -908,5 +916,28 @@ body{
 
     .attribution {
         font-size: .8rem;
+    }
+
+    @media (max-width: 1300px) {
+
+        .jobs__paragraph{
+    /* line-height: 1.75; */
+        /* margin-top: .5rem; */
+    /* font-size: .99rem; */
+        margin-bottom: 0;
+    /* max-width: calc(100% - 2rem);
+    overflow-wrap: break-word; */
+        /* padding: 0 10.5rem; */
+        /* padding: 0 0; */
+            padding: 0;
+        /* padding: 0 0rem; */
+        /* padding: max(0px, (100vw - 600px) / 10); */
+        /* font-weight: 500; */
+        }
+
+        /* .jobs__name--2 {
+            bottom: 3vw;
+        } */
+
     }
 }
